@@ -27,11 +27,11 @@ export const Testimonials = () => {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold text-teal text-center mb-4">
-          Histórias de transformação reais
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-teal text-center mb-4 px-4">
+          Histórias de transformação real
         </h2>
-        <p className="text-xl text-center text-muted-foreground mb-16">
-          Veja o que alunas que já conquistaram sua liberdade têm a dizer
+        <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-12 px-4">
+          Veja como o Método MASD mudou a vida dessas mulheres
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">

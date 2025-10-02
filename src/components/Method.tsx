@@ -37,11 +37,11 @@ export const Method = () => {
           <span className="text-gold text-sm font-medium">O Método</span>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold text-teal text-center mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-teal text-center mb-8 px-4">
           O que é o Método MASD?
         </h2>
 
-        <p className="text-xl text-center text-foreground max-w-4xl mx-auto mb-16">
+        <p className="text-base sm:text-lg md:text-xl text-center text-foreground max-w-4xl mx-auto mb-16 px-4">
           Um método psicológico e prático que atua na{" "}
           <span className="font-bold text-teal">raiz emocional do medo</span>, não apenas na
           técnica de direção. É assim que você conquista resultados reais e duradouros.

@@ -1,0 +1,158 @@
+========================================
+INSTRUÇÕES DE INSTALAÇÃO - TEMA MÉTODO MASD
+========================================
+
+PASSO 1: PREPARAR OS ARQUIVOS
+----------------------------------------
+1. Crie uma pasta chamada "metodo-masd" no seu computador
+2. Copie todos os arquivos do tema para dentro desta pasta:
+   - functions.php
+   - style.css
+   - index.php
+   - header.php
+   - footer.php
+   - README.txt
+   - Pasta "template-parts" (com todos os arquivos)
+
+3. Crie as seguintes pastas dentro de "metodo-masd":
+   - assets/
+   - assets/images/
+   - assets/videos/
+
+4. Coloque as imagens e vídeos nas respectivas pastas:
+   - assets/images/marcia-mattos.jpg (foto da Márcia)
+   - assets/videos/testimonial-1.mp4
+   - assets/videos/testimonial-2.mp4
+   - assets/videos/testimonial-3.mp4
+   - assets/videos/testimonial-4.mp4
+
+
+PASSO 2: COMPACTAR O TEMA
+----------------------------------------
+1. Selecione TODOS os arquivos e pastas dentro de "metodo-masd"
+2. Crie um arquivo ZIP chamado "metodo-masd.zip"
+   
+   IMPORTANTE: O ZIP deve conter os arquivos diretamente, não a pasta "metodo-masd"
+   Estrutura correta do ZIP:
+   metodo-masd.zip
+   ├── functions.php
+   ├── style.css
+   ├── index.php
+   ├── header.php
+   ├── footer.php
+   ├── README.txt
+   ├── template-parts/
+   └── assets/
+
+
+PASSO 3: FAZER UPLOAD NO WORDPRESS
+----------------------------------------
+1. Acesse o painel administrativo do WordPress
+2. Vá em: Aparência > Temas
+3. Clique em "Adicionar novo"
+4. Clique em "Enviar tema"
+5. Clique em "Escolher arquivo"
+6. Selecione o arquivo "metodo-masd.zip"
+7. Clique em "Instalar agora"
+8. Aguarde o upload e instalação
+9. Clique em "Ativar" quando concluído
+
+
+PASSO 4: CONFIGURAR O TEMA
+----------------------------------------
+1. Vá em: Aparência > Personalizar
+2. Procure a seção "Configurações MASD"
+3. Configure:
+   
+   a) Link de Compra (Kiwify):
+      - Cole: https://pay.kiwify.com.br/f1hS5iq
+   
+   b) Preço do Curso:
+      - Digite: R$ 197,00
+   
+4. Clique em "Publicar" para salvar
+
+
+PASSO 5: CRIAR A PÁGINA INICIAL
+----------------------------------------
+1. Vá em: Páginas > Adicionar nova
+2. Título: "Início" ou "Home"
+3. NÃO adicione nenhum conteúdo (deixe em branco)
+4. No lado direito, em "Atributos da página":
+   - Template: Selecione "Página inicial"
+5. Clique em "Publicar"
+
+6. Vá em: Configurações > Leitura
+7. Em "Sua página inicial exibe":
+   - Selecione "Uma página estática"
+   - Página inicial: Selecione a página "Início" que você criou
+8. Clique em "Salvar alterações"
+
+
+PASSO 6: OTIMIZAÇÕES IMPORTANTES
+----------------------------------------
+1. Instale um plugin de cache (recomendado: WP Super Cache ou W3 Total Cache)
+2. Instale um plugin de SEO (recomendado: Yoast SEO)
+3. Configure SSL (HTTPS) no seu site
+4. Otimize as imagens antes de fazer upload (use TinyPNG ou similar)
+
+
+PASSO 7: TESTE O SITE
+----------------------------------------
+1. Acesse seu site em: www.seusite.com.br
+2. Teste em diferentes dispositivos:
+   - Desktop
+   - Tablet
+   - Celular
+3. Verifique se todos os botões levam para o link correto da Kiwify
+4. Teste se os vídeos estão carregando corretamente
+
+
+PROBLEMAS COMUNS E SOLUÇÕES
+----------------------------------------
+
+Problema: Tema não aparece após instalação
+Solução: Verifique se o arquivo ZIP está estruturado corretamente (arquivos na raiz, não em subpasta)
+
+Problema: Vídeos não carregam
+Solução: Verifique se os arquivos de vídeo estão na pasta assets/videos/ e têm os nomes corretos
+
+Problema: Botões não funcionam
+Solução: Certifique-se de ter configurado o link da Kiwify em Aparência > Personalizar > Configurações MASD
+
+Problema: Site muito lento
+Solução: 
+- Instale plugin de cache
+- Otimize/comprima as imagens e vídeos
+- Use CDN se possível
+
+Problema: Cores não aparecem corretamente
+Solução: Limpe o cache do navegador e do WordPress
+
+
+CUSTOMIZAÇÕES AVANÇADAS
+----------------------------------------
+
+Para customizar cores:
+1. Acesse: Aparência > Editor de temas
+2. Abra o arquivo: style.css
+3. Procure por ":root" e altere as variáveis de cores HSL
+
+Para adicionar mais seções:
+1. Crie um novo arquivo em: template-parts/content-novasecao.php
+2. Adicione o conteúdo HTML da seção
+3. Inclua no index.php usando: get_template_part('template-parts/content', 'novasecao');
+
+
+SUPORTE TÉCNICO
+----------------------------------------
+
+Se precisar de ajuda adicional:
+1. Verifique a documentação do WordPress: https://br.wordpress.org/support/
+2. Entre em contato com seu desenvolvedor
+3. Consulte fóruns especializados em WordPress
+
+
+========================================
+BOA SORTE COM SEU SITE!
+========================================

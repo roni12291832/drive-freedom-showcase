@@ -16,10 +16,10 @@ export const Pricing = () => {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-teal-light to-white">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold text-teal text-center mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-teal text-center mb-6 px-4">
           Conquiste sua liberdade no volante hoje
         </h2>
-        <p className="text-xl text-center text-muted-foreground mb-12">
+        <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-12 px-4">
           Investimento muito menor do que alguns dias de Uber para ter liberdade para sempre
         </p>
 
@@ -50,10 +50,13 @@ export const Pricing = () => {
 
           <Button
             size="lg"
-            className="w-full bg-gold hover:bg-gold/90 text-teal font-bold text-xl py-8 rounded-xl shadow-lg hover:shadow-xl transition-all"
+            className="w-full bg-gold hover:bg-gold/90 text-teal font-bold text-base sm:text-lg md:text-xl py-6 md:py-8 rounded-xl shadow-lg hover:shadow-xl transition-all"
+            asChild
           >
-            Sim, quero conquistar minha liberdade agora
-            <ArrowRight className="ml-2 h-6 w-6" />
+            <a href="https://pay.kiwify.com.br/f1hS5iq" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+              <span className="text-center">Sim, quero conquistar minha liberdade agora</span>
+              <ArrowRight className="ml-2 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+            </a>
           </Button>
 
           <div className="mt-8 p-6 bg-teal-light rounded-xl">

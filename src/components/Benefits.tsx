@@ -1,4 +1,5 @@
-import { Check, Car, Shield, Briefcase, Wallet } from "lucide-react";
+import { Check, Car, Shield, Briefcase, Wallet, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const benefits = [
   {
@@ -35,10 +36,10 @@ export const Benefits = () => {
     <section className="py-20 px-4 bg-gradient-to-b from-teal-light to-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-teal mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-teal mb-4 px-4">
             Imagine sua vida com total liberdade para dirigir
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-4">
             É hora de transformar o medo em confiança e conquistar a independência que você merece
           </p>
         </div>
@@ -66,6 +67,19 @@ export const Benefits = () => {
                 <p className="text-lg text-foreground">{achievement}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 text-center">
+            <Button 
+              size="lg" 
+              className="bg-gold hover:bg-gold/90 text-teal font-bold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-lg shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
+              asChild
+            >
+              <a href="https://pay.kiwify.com.br/f1hS5iq" target="_blank" rel="noopener noreferrer">
+                Começar minha transformação
+                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>

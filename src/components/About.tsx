@@ -27,7 +27,7 @@ export const About = () => {
           <span className="text-gold text-sm font-medium">Criadora do Método</span>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold text-teal text-center mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-teal text-center mb-16 px-4">
           Conheça a Psicóloga Márcia Mattos
         </h2>
 

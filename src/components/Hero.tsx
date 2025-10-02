@@ -11,21 +11,27 @@ export const Hero = () => {
           </span>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight px-4">
           Supere o <span className="text-gold">medo de dirigir</span> e conquiste sua{" "}
           <span className="text-teal">liberdade no volante</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
           Método psicológico exclusivo criado pela psicóloga clínica{" "}
           <span className="font-semibold text-foreground">Márcia Mattos</span>. 100% online,
           acessível e transformador.
         </p>
 
         <div className="flex flex-col items-center gap-6">
-          <Button size="lg" className="bg-gold hover:bg-gold/90 text-teal font-bold text-lg px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
-            Quero vencer o medo de dirigir agora
-            <ArrowRight className="ml-2 h-5 w-5" />
+          <Button 
+            size="lg" 
+            className="bg-gold hover:bg-gold/90 text-teal font-bold text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-lg shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
+            asChild
+          >
+            <a href="https://pay.kiwify.com.br/f1hS5iq" target="_blank" rel="noopener noreferrer">
+              Quero vencer o medo de dirigir agora
+              <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+            </a>
           </Button>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
