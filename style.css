@@ -1,0 +1,262 @@
+/*
+Theme Name: Método MASD
+Theme URI: https://drive-freedom-prompt.lovable.app
+Author: Márcia Mattos
+Author URI: https://drive-freedom-prompt.lovable.app
+Description: Landing page profissional para o curso Método MASD - Supere o Medo de Dirigir. Design moderno e responsivo com foco em conversão.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: masd
+Tags: landing-page, one-page, responsive, custom-colors, education
+*/
+
+/* ================================
+   Design System - Cores Customizadas
+   ================================ */
+
+:root {
+    /* Cores Base */
+    --background: 0 0% 100%;
+    --foreground: 160 84% 15%;
+    
+    /* Cores do Card */
+    --card: 0 0% 100%;
+    --card-foreground: 160 84% 15%;
+    
+    /* Cores Primary (Gold) */
+    --primary: 45 93% 47%;
+    --primary-foreground: 160 84% 15%;
+    
+    /* Cores Secondary (Teal Light) */
+    --secondary: 160 60% 97%;
+    --secondary-foreground: 160 84% 15%;
+    
+    /* Cores Muted */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    
+    /* Cores Accent (Gold) */
+    --accent: 45 93% 47%;
+    --accent-foreground: 160 84% 15%;
+    
+    /* Cores de Destaque */
+    --teal: 160 84% 15%;
+    --teal-light: 160 60% 97%;
+    --gold: 45 93% 47%;
+    --gold-light: 45 100% 96%;
+    
+    /* Bordas e Inputs */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 45 93% 47%;
+    
+    /* Border Radius */
+    --radius: 0.5rem;
+}
+
+/* ================================
+   Reset e Base Styles
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   Utility Classes
+   ================================ */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.text-teal {
+    color: hsl(var(--teal));
+}
+
+.text-gold {
+    color: hsl(var(--gold));
+}
+
+.bg-teal {
+    background-color: hsl(var(--teal));
+}
+
+.bg-gold {
+    background-color: hsl(var(--gold));
+}
+
+.bg-teal-light {
+    background-color: hsl(var(--teal-light));
+}
+
+.bg-gold-light {
+    background-color: hsl(var(--gold-light));
+}
+
+/* ================================
+   Botões
+   ================================ */
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: hsl(var(--gold));
+    color: hsl(var(--teal));
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: hsl(45 93% 42%);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* ================================
+   Sections
+   ================================ */
+
+section {
+    padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 0;
+    }
+}
+
+/* ================================
+   Typography
+   ================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* ================================
+   Video Responsivo
+   ================================ */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/* ================================
+   Animações
+   ================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* ================================
+   WordPress Core Fixes
+   ================================ */
+
+.alignnone {
+    margin: 1rem 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 1rem auto;
+}
+
+.alignleft {
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.wp-caption {
+    max-width: 100%;
+}
+
+.wp-caption-text {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+    text-align: center;
+    margin-top: 0.5rem;
+}
